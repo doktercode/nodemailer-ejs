@@ -1,0 +1,48 @@
+<html>
+	<head>
+    	<style>
+				table {
+				    border-collapse: collapse;
+				    width: 100%;
+				}
+
+				th, td {
+				    text-align: left;
+				    padding: 8px;
+				}
+				h5 {
+					text-align: right;
+				}
+
+				tr:nth-child(even){background-color: #f2f2f2}
+			</style>
+	</head>
+    <body>
+    	<h4>Dear <%= UserName %>,</h4>
+    	<p>
+    		Please find the details of new tracker commission.
+		</p>
+    	<br/>
+    	<div style="overflow-x:auto;">
+	 		<table border="1|0"> 
+	        <tr>
+	          <th>Full Name</th>
+	          <th>Message</th>
+	        </tr>
+		   <tr>
+		     <td><%= FullName %></td>
+		     <td><%= Message %></td>
+		   </tr>
+	      </table>
+		</div>
+		<br/>
+    	<br/>
+    	<p>Thanks,</p>
+    	<p>Team Telematics</p>
+    	<br/>
+        <hr>
+        <p>
+        	<h6> Please do not reply to this email. This is system generated email.  <h6>
+        </p>
+    </body>
+</html>
